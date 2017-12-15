@@ -42,13 +42,11 @@ $(document).ready(function() {
     var selectedTopping = eval($("#toppings").val());
     $("#topping-list").append("<li class='empty'>" + selectedTopping.name + ": $" + selectedTopping.price + "</li>");
     selectedToppings.push(selectedTopping);
-    console.log(selectedTopping);
   });
   $("form#new-order").submit(function(event) {
     event.preventDefault();
     var selectedSize = eval($("#sizes").val());
     var newPizza = new Pizza(selectedSize, selectedToppings);
-    console.log(newPizza);
     newPizza.calculateCost();
     $("#hide").show();
     $("#pizza-cost").text("$" + newPizza.pizzaPrice);
