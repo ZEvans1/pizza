@@ -53,6 +53,7 @@ $(document).ready(function() {
   });
   $("#another-pizza").click(function(event) {
     event.preventDefault();
+    selectedToppings = [];
     $(".empty").remove();
     $("#hide").hide();
   });
