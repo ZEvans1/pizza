@@ -21,7 +21,14 @@ function Pizza(size, toppings) {
 }
 
 Pizza.prototype.price = function() {
+  var sizePrice = this.pizzaSize.price;
+  var toppingsPrice = 0;
 
+  for (i=0; i<=this.pizzaToppings.length-1; i++) {
+    toppingsPrice = toppingsPrice + this.pizzaToppings[i].price;
+  }
+  var totalPrice = sizePrice + toppingsPrice;
+  console.log(totalPrice);
 }
 
 //front end
@@ -37,5 +44,6 @@ $(document).ready(function() {
     var selectedSize = eval($("#sizes").val());
     var newPizza = new Pizza(selectedSize, selectedToppings);
     console.log(newPizza);
+    newPizza.price();
   });
 });
