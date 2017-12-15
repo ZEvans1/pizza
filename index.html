@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Pizza: Orders</title>
   </head>
   <body>
-    
+    <div class="container">
+      <h1>Order Menu</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Place your order below:</h2>
+          <form id="new-order">
+            <div class="form-group">
+              <h3>Toppings</h3>
+              <select class="form-control" id="toppings">
+                <option>Peppers</option>
+                <option>Red Onions</option>
+                <option>Mushrooms</option>
+                <option>Extra cheese</option>
+                <option>Parmesan</option>
+                <option>Mozzarella</option>
+                <option>Tomato sauce</option>
+                <option>BBQ sauce</option>
+                <option>Pesto sauce</option>
+                <option>Garlic sauce</option>
+              </select>
+            </div>
+            <button type="button" class="btn btn-info" id="topping-button">Add topping</button>
+            <div class="form-group">
+              <h3>Size</h3>
+              <select class="form-control" id="sizes">
+                <option value="small">Small (10")</option>
+                <option value="medium">Medium (12")</option>
+                <option value="large">Large (14")</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Place order</button>
+          </form>
+          <div>
+            <p id="output">Your order total is <span></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
