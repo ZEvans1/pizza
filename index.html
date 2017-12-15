@@ -9,10 +9,10 @@
   </head>
   <body>
     <div class="container">
-      <h1>Order Menu</h1>
+      <h1>A Pizza Ordering Menu</h1>
       <div class="row">
         <div class="col-md-6">
-          <h2>Place your order below:</h2>
+          <h3>Place your order below:</h3>
           <form id="new-order">
             <div class="form-group">
               <h3>Toppings</h3>
@@ -41,15 +41,15 @@
             <button type="submit" class="btn btn-primary">Place order</button>
             <button type="button" class="btn btn-warning" id="another-pizza">Reset order</button>
           </form>
-          <div id="hide">
-            <p id="output">Your order total is <span id="pizza-cost"></span></p>
-          </div>
         </div>
         <div class="col-md-6">
-          <h4>Your Selected Toppings:</h4>
+          <h3>Your Selected Toppings:</h3>
           <ul id="topping-list">
           </ul>
         </div>
+      </div>
+      <div id="hide">
+        <p id="output">Your order total is <span id="pizza-cost"></span></p>
       </div>
     </div>
   </body>

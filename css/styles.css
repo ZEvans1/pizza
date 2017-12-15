@@ -1,3 +1,35 @@
 #hide {
   display: none;
 }
+
+body {
+  background-color: #d6cbb8;
+}
+h1 {
+  text-align: center;
+  border: solid 2px;
+}
+
+.empty {
+  font-size: 18px;
+  color: green;
+}
+
+#output {
+  text-align: center;
+  font-size: 20px;
+  padding: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: solid 3px;
+  margin: 10px;
+}
+
+#pizza-cost {
+  font-weight: bold;
+  color: green;
+}
+
+#another-pizza {
+  margin: 20px;
+}
